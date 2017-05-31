@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "es6",
+            "es5",
+            "es2015",
+            "dom",
+            "dom.iterable"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "allowJs": true,
+        "outDir": "./build",
+        "sourceMap": true,
+        "baseUrl": "./src/app",
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false
+    },
+    "include": [
+        "./src/frameworken.template.d.ts",
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+        "useBabel": false,
+        "useCache": true,
+        "useTranspileModule": true
+    }
+}

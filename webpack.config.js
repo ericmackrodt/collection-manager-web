@@ -38,6 +38,10 @@ const config = {
           '@dasframeworken/template.loader'
         ],
         exclude: '/node_modules'
+      },
+      {
+        test: /(\.css)$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },

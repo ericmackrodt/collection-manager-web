@@ -1,9 +1,11 @@
 export class TitleComponent {
     static get metadata() {
         return {
-            dependencies: []
+            dependencies: <any[]>[]
         };
     }
+
+    private _potato: string;
 
     get potato() {
         return this._potato;
@@ -11,7 +13,7 @@ export class TitleComponent {
     set potato(val) {
         if (val !== this._potato) {
             this._potato = val;
-            this._notifyChange('potato');
+            (<any>this)._notifyChange('potato');
         }
 
     }

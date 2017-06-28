@@ -1,5 +1,5 @@
 import { FakeService } from './../services/fake.service';
-import { observable, inject } from './../../src/ts';
+import { observable, inject } from '@dasframeworken/base';
 
 @inject
 export class HomeComponent {

@@ -7,7 +7,7 @@ export class AnotherComponent {
         };
     }
 
-    constructor(fake) {
+    constructor(fake: FakeService) {
         console.log(fake.kept);
     }
 }
